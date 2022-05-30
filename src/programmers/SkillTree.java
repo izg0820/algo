@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+//https://programmers.co.kr/learn/courses/30/lessons/49993
 public class SkillTree {
     public int solution(String skill, String[] skill_trees) {
         int answer = 0;
