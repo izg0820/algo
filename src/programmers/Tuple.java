@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+//https://programmers.co.kr/learn/courses/30/lessons/64065
 public class Tuple {
     public int[] solution(String s) {
 
