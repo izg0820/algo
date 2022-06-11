@@ -6,6 +6,7 @@ import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+//https://programmers.co.kr/learn/courses/30/lessons/92334
 public class ReportInformation {
     public int[] solution(String[] id_list, String[] report, int k) {
 
