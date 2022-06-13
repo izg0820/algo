@@ -26,9 +26,9 @@ public class OpenChat {
                     logs.stream().forEach(p -> p.changeName(uid, ids.getName(uid), temp[2]));
                     ids.changeName(uid, temp[2]);
                 } else {
-                    logs.add(new Log(uid, temp[2] + enter));
                     ids.add(uid, temp[2]);
                 }
+                logs.add(new Log(uid, temp[2] + enter));
             } else if ("Leave".equals(action)) {
                 logs.add(new Log(uid ,ids.getName(uid) + leave));
             } else if ("Change".equals(action)) {
@@ -45,11 +45,12 @@ public class OpenChat {
 
 
     public class Log {
+
         private String id;
         private String context;
 
         public void changeName(String id, String before, String after) {
-            if (id.equals(id)) {
+            if (this.id.equals(id)) {
                 context = context.replace(before, after);
             }
         }
@@ -64,9 +65,8 @@ public class OpenChat {
         }
     }
 
-
-
     public class Ids {
+
         private HashMap<String, String> info = new HashMap<>();
 
         public void add(String id, String name) {
@@ -84,7 +84,6 @@ public class OpenChat {
         public String getName(String id) {
             return info.get(id);
         }
-
     }
 
     @Test
