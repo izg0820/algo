@@ -42,10 +42,10 @@ public class ReportInformation {
     }
 
     public class User {
-        String id;
-        Set<String> idWhoReport;
+        private String id;
+        private Set<String> idWhoReport;
 
-        int reportedCnt;
+        private int reportedCnt;
 
         public User(String id) {
             this.id = id;
