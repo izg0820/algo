@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+//https://programmers.co.kr/learn/courses/30/lessons/12914
 public class LongJump {
 
     public int solution(int n) {
